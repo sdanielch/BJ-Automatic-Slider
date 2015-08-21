@@ -1,0 +1,218 @@
+#paginator {
+background: transparent;
+padding: 1px;
+display: none;
+position: absolute;
+top: 12px;
+left: 25px;
+z-index: 800;
+}
+#paginator td {
+-webkit-transition: all 300ms ease;
+-moz-transition: all 300ms ease;
+-ms-transition: all 300ms ease;
+-o-transition: all 300ms ease;
+transition: all 300ms ease;
+margin: 1px;
+width: 8px;
+height: 8px;
+border-radius: 15px;
+cursor: pointer;
+}
+
+.p0, .p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9 {
+-webkit-background-size: 100% 100% !important;
+-moz-background-size: 100% 100% !important;
+-o-background-size: 100% 100% !important;
+background-size: 100% 100% !important;
+background-repeat: no-repeat !important;
+background-attachment: fixed !important;
+background-position: center top !important;
+
+}
+.paginator-a {
+background-color: #282828;
+border: 1px #323232 solid;
+border-bottom: 2px #484848 solid;
+opacity: 0.75;
+}
+
+.paginator-a:hover {
+background-color: #ababab;
+border: 1px #323232 solid;
+border-bottom: 2px #cdcdcd solid;
+opacity: 1;
+}
+
+.paginator-e {
+background-color: #CC0000;
+border: 1px #323232 solid;
+border-bottom: 2px #FF0000 solid;
+opacity: 1;
+}
+#updates {
+border-radius: 2px 2px 0px 0px;
+width: 638px;
+height: auto;
+margin-left: -15px;
+margin-top: 10px;
+background: transparent;
+background-repeat: no-repeat;
+background-position: 50% 50%;
+color: #DCDCDC;
+overflow: hidden;
+position: relative;
+border: 0px #232323 solid;
+}
+#updates2 {
+width: auto; display: none;
+}
+.feedh5 {
+position: absolute;
+top: 30px;
+background: transparent;
+left: 40px;
+right: 40px;
+z-index: 4;
+text-align: center;
+font-family: Times New Roman;
+font-size: 28px;
+padding: 0px;
+margin: 0px;
+color: #EFEFEF;
+  }
+
+.feedh5 a:link, .feedh5 a:visited {
+text-decoration: none;
+color: #EFEFEF;
+text-shadow: 0 0 8px #000,0 1px 0 #999, 0 2px 0 #888, 0 3px 0 #777, 0 4px 0 #666, 0 5px 0 #555, 0 6px 0 #444, 0 7px 5px #333, 0 8px 7px #000b21;
+
+}
+
+.feedDate {
+position: absolute;
+top: 0px;
+right: 0px;
+text-align: right;
+width: 100%;
+z-index: 5;
+padding: 5px;
+margin: 0px;
+font-family: Arial;
+font-size: 14px;
+height: 14px;
+text-shadow: 0 0 1px #000000;
+
+
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC43NSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.75) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,0.75)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0.75) 100%);
+background: -o-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0.75) 100%);
+background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(0,0,0,0.75) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(0,0,0,0.75) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=&#39;#000000&#39;, endColorstr=&#39;#bf000000&#39;,GradientType=0 );
+
+  }
+.feedThumb {
+width: 100%;
+position: absolute;
+top: -75%;
+right: 0px;
+z-index: 1;
+
+
+}
+
+.anim {
+ -webkit-animation-name: ball-roll;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
+    /* Standard syntax */
+    animation-name: ball-roll;
+    animation-duration: 10s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-play-state: running;
+  }
+
+
+
+
+.lbrightness {
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 100%;
+background: transparent;
+z-index: 20;
+display: block;
+cursor: pointer;
+}
+.brightness {
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.3);
+z-index: 2;
+display: block;
+cursor: pointer;
+}
+.feedBlurb {
+position: absolute;
+bottom: 0px;
+left: 0px;
+z-index: 3;
+padding: 5px;
+margin: 0px;
+font-family: Arial;
+font-size: 14px;
+color: #CDCDCD;
+text-shadow: 0 0 1px #000000;
+
+width: 100%;
+
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjc1Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.75)), color-stop(100%,rgba(0,0,0,1)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.75) 0%,rgba(0,0,0,1) 100%);
+background: -o-linear-gradient(top, rgba(0,0,0,0.75) 0%,rgba(0,0,0,1) 100%);
+background: -ms-linear-gradient(top, rgba(0,0,0,0.75) 0%,rgba(0,0,0,1) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%,rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=&#39;#bf000000&#39;, endColorstr=&#39;#000000&#39;,GradientType=0 );
+
+
+
+
+
+
+}
+#buttons22 {
+float: right;
+width: 200px;
+height: 50px;
+background: #39f;
+display: block;
+margin-bottom: 10px;
+}
+#cslider {
+color: #CDCDCD;
+font-size: 18px;
+background: #222;
+height: 22px;
+text-align: left;
+padding: 5px;
+margin-top: 10px;
+margin-bottom: -10px;
+margin-left: -18px;
+margin-right: -18px;
+}
